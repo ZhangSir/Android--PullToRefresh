@@ -1,0 +1,2 @@
+# Android--PullToRefresh
+这是一个android平台自定义组件，支持ScrollView和ListView及ExpandableListView等多种组件的下拉刷新上拉更多操作，本组件有参考网上的资料，具体都忘了，抱歉，如有侵权请及时联系，我定当及时移除！
