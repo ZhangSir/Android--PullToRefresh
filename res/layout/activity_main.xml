@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pull="http://schemas.android.com/apk/res/com.zs.pulltorefreshtest"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:text="@string/app_name"
+        android:textSize="20dp"/>
+
+    <com.zs.pulltorefreshtest.PullToRefreshView
+        android:id="@+id/pull_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        pull:mode="both"
+        android:background="@android:color/white">
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="ghhhhhhhhhhhhhhhhhhhhhhhhhhhhjgjghjghjgjhghjghjgjhgjhghjgjgjhgjhgklguitgutuyghvtyftfjbkghuiguighjvhgyfryfuyfguygikgui
+	        ghhhhhhhhhhhhhhhhhhhhhhhhhhhhjgjghjghjgjhghjghjgjhg"
+	        android:textSize="50dp" />
+        </ScrollView>
+        
+    </com.zs.pulltorefreshtest.PullToRefreshView>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</LinearLayout>

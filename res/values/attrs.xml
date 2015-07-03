@@ -1,0 +1,26 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+
+    -->
+
+    <declare-styleable name="PullToRefreshViewAttr">
+        <attr name="PullToRefreshViewStyle" format="reference"></attr>
+        <attr name="mode">
+            <flag name="pull_down_to_refresh" value="0x1" />
+            <flag name="pull_up_to_refresh" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+        <attr name="header_background_resource" format="reference"></attr>
+        <attr name="footer_background_resource" format="reference"></attr>
+        <attr name="content_background_resource" format="reference"></attr>
+        <attr name="header_background_color" format="reference|color"></attr>
+        <attr name="footer_background_color" format="reference|color"></attr>
+        <attr name="content_background_color" format="reference|color"></attr>
+    </declare-styleable>
+
+</resources>
